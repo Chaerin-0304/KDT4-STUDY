@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/practice2.css">
+    <title>복합선택자 배우기!!</title>
+
+    <style>
+        header{
+            height:70px;
+            background-color: gray;
+        }
+
+        section{
+            border: 1px solid blue;
+        }
+
+        article{
+            height:100px;
+            border: 1px solid salmon;
+        }
+
+        /* 복합선택자 */
+        /* 직계자식 선택자 */
+        header > h2 {
+            color : white;
+            text-align: center;
+            line-height: 70px;
+        }
+        
+        .first > h2 {
+            background-color: blue;
+            color: white;
+        }
+        .second > h2 {
+            color:midnightblue;
+            background-color:aliceblue;
+        }
+
+        main > .first > article > ul > li {
+            font-size: 20px;
+            background-color: brown;
+            color:#ffffff;
+        }
+        /* 후손 선택자 */
+        main > .second li {
+            font-size: 10px;
+        }
+
+        /* 형제 선택자 */
+        /* 인접형제 선택자 (id 바로 밑에 있는 li가 선택되는 것)*/
+        #fairy + li {
+            background-color: green;
+            color:beige;
+        }
+
+        p.lion{
+            background-color: red;
+        }
+        .zoo ul .lion {
+            background-color: greenyellow;
+        }
+
+        #tiger {
+            background-color: yellow;
+        }
+
+        .lion {
+            color:sienna;
+        }
+        .zoo> ul > .lion {
+            font-weight: bold;
+        }
+        #tiger + li {
+            background-color: skyblue;
+        }
+
+        .zoo > ul > li.lion ~ li {
+            background-color: orange;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h2>선택자 배우기</h2>
+    </header>
+    <main>
+        <section class="first">
+            <h2>first section</h2>
+            <article>
+                <span>전래동화</span>
+            </article>
+            <article>
+                <ul>
+                    <li id="fairy">선녀와 나무꾼</li>
+                    <li>햇님 달님</li>
+                    <li>콩취 팥쥐</li>
+                    <li>은혜갚은 까치</li>
+                </ul>
+            </article>
+            <article></article>
+        </section>
+        <section class="second">
+            <h2>second section</h2>
+            <article>
+                <ul>
+                    <li>신데렐라</li>
+                    <li>백설공주</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    
+        <h1>복합선택자 사용 연습</h1>
+        <p>동물원에 왔어요</p>
+        <div class="zoo">
+       <ul>
+       <span>여긴 사파리!</span>
+       <li>곰</li>
+       <li id="tiger">호랑이</li>
+       <li>팬더</li>
+       <span class="lion">사자1</span>
+       <li class="lion">사자2</li>
+       <li>사육사 allie</li>
+       <li>사육사 진형</li>
+       </ul>
+         <span class="lion"> 사파리 밖의 사자</span>
+        </div>
+        <p class="lion">야생의 사자</p>
+      
+</body>
+</html>

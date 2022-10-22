@@ -1,0 +1,21 @@
+@import url("box.css");
+
+ul{
+    background-color: chocolate;
+}
+
+p{
+    background-color: red;
+    color:white;
+}
+
+div{
+     background-color: rgba(170, 69, 170, 0.295);
+     color: white;
+}
+
+h3{
+    background-color: blue;
+    color:white;
+    letter-spacing: 10px;
+}

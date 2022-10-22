@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box 모델</title>
+    <style>
+        .box{
+            width: auto;
+            height: 200px;
+            background-color: orange;
+        }
+
+        .html{
+            display: inline-block;
+            width: 200px;
+            height:100px;
+            background-color: green;
+        }
+
+        .css{
+            display: inline-block;
+            width: 200px;
+            height:100px;
+            background-color: aqua;
+        }
+
+        .javascript{
+            display: inline-block;
+            width: 200px;
+            height:100px;
+            background-color: blanchedalmond;
+        }
+
+        .calc {
+            width: calc(10vw);
+            background-color: pink;
+            line-height: 40px;
+            height: 40px;
+        }
+
+        .border {
+            width: 50%;
+            height: 100px;
+            border-top: 1px solid pink;
+            border-bottom: 4px dashed green;
+            border-left: 8px dotted blue;
+            border-right: 12px groove purple;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .box1 {
+            box-sizing: border-box;
+            width: 100px;
+            height: 100px;
+            padding: 20px;
+            border:15px solid red;
+            background-color: orange;
+        }
+
+        .box2 {
+            box-sizing: content-box;
+            width: 100px;
+            height: 100px;
+            padding: 20px;
+            border:15px solid red;
+            background-color: orange;
+        }
+
+        .sqaure {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+
+        .sqaure:hover{
+            visibility: hidden;
+        }
+
+        .visible{
+            overflow: visible;
+            width: 100px;
+            height: 100px;
+        }
+
+        .hidden {
+            overflow: hidden;
+            width: 100px;
+            height: 100px;
+        }
+
+        .scroll {
+            overflow: scroll;
+            width: 100px;
+            height: 100px;
+        }
+
+        .auto {
+            overflow: auto;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+    <span class="html">HTML</span>
+    <span class="css">CSS</span>
+    <span class="javascript">Javascript</span>
+    </div>    
+
+    <div class="calc">KDT</div>
+
+    <br><br><br><br><br><br><br>
+    <div class="border">box</div>
+
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+
+    <br><br><br><br><br><br><br>
+    <div class="sqaure">sqaure</div>
+
+    <br><br><br><br><br><br><br>
+    <div class="visible">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod doloremque autem id, maiores nesciunt quibusdam numquam eaque, totam officiis enim nostrum cupiditate, molestias error possimus veritatis minus doloribus sit. Distinctio?</div>
+    <div class="hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis laudantium nostrum ducimus placeat eaque, omnis voluptate consequuntur officia nemo odio dolorem explicabo, accusantium dignissimos, odit ipsa vel ea voluptatum provident?</div>
+    <div class="scroll">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat illum officia magni nulla hic fugit. Magni atque voluptates mollitia laudantium maxime quisquam provident dignissimos exercitationem? Culpa corporis totam tempore consectetur!</div>
+    <div class="auto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus soluta eum fuga vel iste ratione corrupti autem quo, eius impedit sint neque quod necessitatibus non perferendis itaque? Minima, saepe rerum!</div>
+</body>
+</html>

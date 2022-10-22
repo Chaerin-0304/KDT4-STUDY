@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@font-face {
+    font-family: 'PyeongChangPeace-Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+span {
+    font-family: "roboto", sans-serif;
+}
+
+.container .sentences {
+/* bolder= 900 */
+
+    font-weight: 900;
+/* line-heigh는 문장간 간격을 조절하는 것 */
+    line-height: 100px;
+}
+
+.sentences2{
+    font-family: "PyeongChangPeace-Light";
+}

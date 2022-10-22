@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* 공통사항  */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+ul{
+    list-style: none;
+    padding-left:0;
+    display:flex;
+    justify-content: space-between;
+}
+
+li {
+    padding:10px;
+}
+header{
+    background-color: gray;
+    align-items: center;
+    padding: 10px;
+    font-weight: 500;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* header1 */
+.header1 {
+    display: flex;
+    flex-direction:  row;
+    justify-content: space-between;
+}
+
+.header1>.menus{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* header2 */
+.header2>.menus {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* header3 */
+.header3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* header4 */
+.header4 {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header4 .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header4 .menu-left {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+/* 실습2 */
+
+/* 공통사항  */
+.box { 
+   width: 1000px;
+   height: 700px;
+    background-color: gray;
+    margin: 400px auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.beach {
+    position: relative;
+    width: 200px;
+    height: 150px;
+    background-size: cover;
+    transform: perspective(1000px) skewY(30deg);
+    transition: 1s;
+    left:calc(50% - 300px);
+    top: calc(50% - 100px);
+
+
+}
+
+.beach1 {
+    background-image: url("/03 CSS/img/beach1.jpg")
+}
+
+.beach2 {
+    background-image: url("/03 CSS/img/beach2.jpg")
+}
+
+.beach3 {
+    background-image: url("/03 CSS/img/beach3.jpg")
+}
+
+
+.beach:hover{
+    transition: 1s;
+    transform: skewY(0deg);
+}
+
+/* 실습3 */
+p {
+    animation: text 4s linear reverse;
+}
+
+@keyframes text {
+    to {
+        margin-left: 100%;
+        width: 300%;
+        
+    }
+
+    from {
+        width: 100%;
+    }
+}
+
+/* 실습4 */
+.bounceball {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: gold;
+    border-radius: 50%;
+    animation-name: bounceball1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes bounceball1 {
+
+    0%{
+        left:0;
+        top:0;
+    }
+    
+    25%{
+        left: calc(100% - 200px);
+        top:0;
+    }
+
+    50%{
+        left: calc(100% - 200px);
+        top: calc(100% - 200px);
+    }
+
+    75%{
+        left: 0;
+        top: calc(100% - 200px);
+    }
+
+    100% {
+        left:0;
+        top:0;
+    }
+
+}

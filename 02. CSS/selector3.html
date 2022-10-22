@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자3</title>
+    <style>
+        .div1{
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            background-color: skyblue;
+        }
+        /* hover */
+        .div1:hover{
+            width: 150px;
+            background-color: orange;
+        }
+        /* active */
+        .div1:active{
+            background-color: aquamarine;
+            height: 150px;
+        }
+        /* focus */
+        input:focus{
+            background-color: purple;
+            color: white;
+            outline-color: aqua;
+        }
+        /* visited */
+        .links > a:visited{
+            color: chartreuse;
+        }
+        /* last-child, first-child, nth-child, not */
+        .zoo > * {
+            background-color: green;
+            color: white;
+            font-size: 20px;
+        }
+        .zoo li:last-child{
+            background-color: yellow;
+            color: black;
+        }
+        .zoo *:first-child{
+            background-color: pink;
+        }
+        .zoo *:nth-child(2){
+            background-color: black;
+            color: white;
+        }
+        /* even:짝수 odd:홀수  
+        nth-child의 괄호 안에 2n+1 이나 2n같은 수식 대신에 odd와 even이라는 키워드를 쓸 수 있습니다!*/
+        .zoo *:nth-child(even){
+            background-color: aqua;
+        }
+
+        .zoo *:not(div) {
+            font-weight: bold;
+        }
+
+        .stripes {
+            background-color: navy;
+            color:white;
+        }
+
+        .stripes *:nth-child(4n+2){
+            background-color : yellow;
+            color: black;
+        }
+
+        .stripes *:nth-child(4n+2):hover{
+            background-color : orange;
+            cursor: pointer;
+        }
+
+        .box:hover::before{
+            content: "택시";
+        }
+
+        .box:hover::after{
+            content: "빨리";
+        }
+
+        .box{
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- <h3>가상 클래스 선택자</h3> -->
+    <!-- hover -->
+    <!-- <div class="div1">
+        <span>div1</span>
+    </div>
+    <input type="text" />
+    <div class="links">
+        <a href="#">네이버로 이동</a>
+        <a href="#">다음으로 이동</a>
+    </div> -->
+    <!--
+        E:first-child {}  E가 첫번째 요소라면 선택
+        E:last-child {}  E가 마지막 요소라면 선택
+        E:nth-child(n) {}  E가 n번째 요소라면 선택
+        E:not(xy) {}  xy가 아닌 다른요소 선택
+     -->
+    <!-- <ul class="zoo">
+        <h4>동물원입니다.</h4>
+        <div>판다</div>
+        <li>원숭이</li>
+        <li>토끼</li>
+        <li>사자</li>
+        <li>호랑이</li>
+        <li>코끼리</li>
+        <div>코알라</div>
+        <li>기린</li>
+    </ul>
+
+    <div class="stripes">
+        <div class="div">navy</div>
+        <div class="div">yellow</div>
+        <div class="div">navy</div>
+        <div class="div">navy</div>
+        <div class="div">navy</div>
+        <div class="div">yellow</div>
+        <div class="div">navy</div>
+        <div class="div">navy</div>
+        <div class="div">navy</div>
+        <div class="div">yellow</div>
+        <div class="div">navy</div>
+    </div> -->
+
+    <div class="box">여기요!</div>
+</body>
+</html>
