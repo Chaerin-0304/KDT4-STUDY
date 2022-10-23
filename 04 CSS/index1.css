@@ -68,11 +68,9 @@ video {
 .header .sns li a {
     /* 화면의 크기에 따라 */
     margin: 0 0.5vw;
-    font-size : 18px;
+    font-size : 30px;
     color: purple;
 }
-
-.header .sns li a i{}
 
 /* sub-menu */
 
@@ -80,6 +78,7 @@ video {
     /* default body 기준 기준 삼는 것에 relative 걸어줘야 함  */
     /* position:absolute; */
     display: none;
+    font-size: 30px;
 }
 
 /* main */
@@ -139,7 +138,7 @@ footer {
     padding: 3vh 3vw;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1200px) {
     .header {
         height: 150px;
     }
@@ -162,11 +161,18 @@ footer {
     }
 
     main .text p {
-        font-size: 40px;
+        font-size: 50px;
+    }
+    main .text ul {
+        flex-direction: column;
     }
 
     main .text ul li {
         font-size: 25px;
+    }
+
+    footer {
+        font-size: 1.5rem;
     }
 
 }
