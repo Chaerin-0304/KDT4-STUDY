@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>별찍기</title>
+  </head>
+  <body></body>
+  <script>
+    function drawStars3(n) {
+      let lines = "*";
+      let zero = " ";
+      for (i = 0; i < 2 * n; i++) {
+        if (i % 2 === 1) {
+          console.log(
+            `${zero.repeat((2 * n - i) / 2)}${lines.repeat(i)}${zero.repeat(
+              (2 * n - i) / 2
+            )}`
+          );
+        }
+      }
+    }
+    drawStars3(3);
+
+    function drawStars4(n) {
+      let lines = "*";
+      let zero = " ";
+      for (i = 1; i < 2 * n; i++) {
+        if (i % 2 === 1) {
+          console.log(
+            `${zero.repeat((2 * n - i) / 2)}${lines.repeat(i)}${zero.repeat(
+              (2 * n - i) / 2
+            )}`
+          );
+        }
+      }
+      for (i = 2 * (n - 1); i > 0; i--) {
+        if (i % 2 === 1) {
+          console.log(
+            `${zero.repeat((2 * n - i) / 2)}${lines.repeat(i)}${zero.repeat(
+              (2 * n - i) / 2
+            )}`
+          );
+        }
+      }
+    }
+    drawStars4(3);
+
+    function drawStars5(n) {
+      let lines = "*";
+      let zero = " ";
+      for (i = 1; i < n + 1; i++) {
+        console.log(`${zero.repeat(n - i)}${lines.repeat(n)}`);
+      }
+    }
+    drawStars5(5);
+  </script>
+</html>

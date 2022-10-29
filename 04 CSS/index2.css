@@ -94,7 +94,7 @@ section .sky .moon {
     transform-origint : X값 (50%가 중앙) Y값 좌표*/
     transform-origin: 50% 600px;
     /* 여기 밑에 animation */
-    animation: moon_move 12s linear 3s infinite;
+    animation: moon_move 12s linear infinite;
     
 }
 
