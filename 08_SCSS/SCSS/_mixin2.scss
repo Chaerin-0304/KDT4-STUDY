@@ -1,0 +1,11 @@
+@mixin button($width: 100px, $bgColor: red, $fontColor: #fff) {
+  display: block;
+  width: $width;
+  height: 30px;
+  border-radius: 15px;
+  background-color: $bgColor;
+  color: $fontColor;
+  text-align: center;
+  font: bold 16px/30px "arial";
+  margin: 20px auto 0;
+}
